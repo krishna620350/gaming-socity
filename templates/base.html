@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+    <title>{% block title%}{% endblock title %}</title>
+  </head>
+  <body>
+    <div class="container">
+      {% include 'navbar.html' %}
+    </div>
+      {%block body%}{% endblock body %}
+      <footer>
+        <div class="imp-link">
+          <h4>Imp-link</h4>
+          <a href="">unity</a><br>
+          <a href="">unrealEngine</a><br>
+          <a href="">Autocade</a><br>
+          <a href="">Maya</a><br>
+          <a href="">blender</a><br>
+        </div>
+        <div class="contact-info">
+          <h4>Contact</h4>
+          <a href="">facebook</a><br>
+          <a href="">instagram</a><br>
+          <a href="">linkedin</a><br>
+          <a href="">twitter</a><br>
+        </div>
+        <div class="images-info">
+          <h4>Some-imp-Company</h4>
+          <div>
+            <span><img src="{% static 'image/footer/footer (1).jpeg'%}" alt=""></span>
+            <span><img src="{% static 'image/footer/footer (2).jpg'%}" alt=""></span>
+          </div>
+          <div>
+            <span><img src="{% static 'image/footer/footer (3).png'%}" alt=""></span>
+            <span><img src="{% static 'image/footer/footer (4).png'%}" alt=""></span>
+          </div>
+          <div>
+            <span><img src="{% static 'image/footer/footer (5).png'%}" alt=""></span>
+            <span><img src="{% static 'image/footer/footer (6).png'%}" alt=""></span>
+          </div>
+        </div>
+        <div class="personal-contact">
+          <h4>Personal Contact</h4>
+          <p>Name :- Krishna<br>Email Id :- krishna966120@gmail.com</p>
+        </div>
+      </footer>
+      <div style="background-color:rgba(119, 118, 118, 0.404);
+    text-align: center;
+    color:white;">
+        <p>All rights reserved by <a href="">Krishna</a></p>
+      </div>
+      <script src="{% static 'js/typed.js' %}"></script>
+      <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>

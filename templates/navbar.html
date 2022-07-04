@@ -1,0 +1,33 @@
+{% load static %}
+<nav>
+    <div class="nav-left">
+        <div class="nav-img">
+            <a href="/"><img src="{% static 'image/icons/icon.png' %}" alt="#" /></a>
+            <h1>JanMar</h1>
+        </div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about" target="_new">About</a></li>
+            <li><a href="#">Share</a>
+                <div class="sub-menu-bar-1">
+                    <ul class="share-list">
+                        <li><a href="">facebook</a></li>
+                        <li><a href="">whatsapp</a></li>
+                        <li><a href="">instagram</a></li>
+                        <li><a href="">telegram</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+    <div class="input">
+        <div>
+            <label for="name"></label>
+            <input type="text" id="name" placeholder="search contant....." />
+        </div>
+        <div>
+            <button type="submit">search</button>
+        </div>
+    </div>
+</nav>
